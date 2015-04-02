@@ -1,0 +1,7 @@
+0.0.1
+
+- First Attempt!
+
+0.0.2
+
+- Massive code cleanup, Corrected notifications, Made better use of built in functions

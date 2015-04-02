@@ -4,4 +4,8 @@
 
 0.0.2
 
-- Massive code cleanup, Corrected notifications, Made better use of built in functions
+- Massive code cleanup, Corrected notifications, Made better use of built in functions(Using built in WakeOnLan function instead of building the magic packet in python.
+
+0.0.3
+
+- Finally got settings to play nice with the ssh command.

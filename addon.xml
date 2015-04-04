@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="script.python.serverslayer" version="0.0.3" name="Server Slayer"
+<addon id="script.nas.power" version="0.0.4" name="Nas Power"
 provider-name="dalton">
         <requires></requires>
-        <extension point="xbmc.python.script" library="shutdown.py">
+        <extension point="xbmc.python.script" library="default.py">
                 <provides>service</provides>
         </extension>
         <extension point="xbmc.addon.metadata">
-                <summary>Server Slayer</summary>
+                <summary>Nas Power</summary>
                 <description>Simple program to shutdown and boot up
 remote server.</description>
                 <platform>all</platform>

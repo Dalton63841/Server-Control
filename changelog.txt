@@ -9,3 +9,7 @@
 0.0.3
 
 - Finally got settings to play nice with the ssh command.
+
+0.0.4
+
+- Title change in Notifications

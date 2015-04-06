@@ -11,12 +11,13 @@ mac = __addon__.getSetting("macaddress")
 user = __addon__.getSetting("username")
 command = __addon__.getSetting("command")
 icon = __addon__.getAddonInfo('icon')
+port = __addon__.getAddonInfo('port')
 
 xbmc.executebuiltin('Notification(Nas Power,Checking Remote Server Status,5000,%s)' % icon)
 result = commands.getoutput("ping -c1 " + ipadd)
 if result.find("100% packet loss") == -1:
     xbmc.executebuiltin('Notification(Nas Power,Shutting Down Remote Server,3000,%s)' % icon)
-    os.system('ssh %s@%s %s ' % (user, ipadd, command))
+    os.system('ssh -p %s %s@%s %s ' % (port, user, ipadd, command))
     result = True
     while (result == True):
         check = commands.getoutput("ping -c1 " + ipadd)
